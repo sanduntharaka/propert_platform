@@ -53,7 +53,7 @@ export const NavBar = () => {
                                     "text-opacity-60 text-black hover:text-opacity-100 transition",
                                     {
                                         "font-bold underline underline-offset-4 decoration-[#6390db] decoration-2":
-                                            route.path === window.location.pathname,
+                                            pathname === route.path,
                                     }
                                 )}
                                 key={index}

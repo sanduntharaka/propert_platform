@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import AboutImage from '../../../assets/images/about.png'
+import AboutImage from '../../../assets/images/About.png'
 import Rectangle from '../../../assets/icons/rectangle.png'
 import { MainButtonDiv } from '@/components/animated/MainButtonDiv'
 import { MdArrowOutward } from "react-icons/md";
