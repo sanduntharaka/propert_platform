@@ -3,10 +3,10 @@ import React from 'react'
 import { motion } from 'framer-motion';
 
 
-export const MainButton = ({ ButtonText, ButtonImage }: MainButton) => {
+export const MainButtonDiv = ({ ButtonText, ButtonImage }: MainButton) => {
     return (
         <motion.button
-            className="relative w-32 h-12 flex items-center justify-center gap-4 overflow-hidden "
+            className="relative w-32 h-12 flex items-center justify-center gap-4 overflow-hidden border-b-2 border-blue-500 "
             initial="rest"
             whileHover="hover"
             whileTap="hover"
@@ -14,7 +14,7 @@ export const MainButton = ({ ButtonText, ButtonImage }: MainButton) => {
         >
             {/* Sliding Background */}
             <motion.div
-                className="absolute inset-0 bg-gray-400"
+                className="absolute inset-0 bg-white"
                 variants={{
                     rest: { y: "100%" }, // Background starts hidden
                     hover: { y: "0%" },  // Background slides up on hover

@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <body className={clsx(roboto.className, "antialiased bg-white ml-8 mr-8")}>
+      <body className={clsx(roboto.className, "antialiased bg-white ml-8 mr-8 ")}>
         <NavBar />
         {children}
       </body>

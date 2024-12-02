@@ -1,12 +1,12 @@
 import React from 'react'
-import BannerImage from '../../assets/images/HeroBanner.png'
+import BannerImage from '../../../assets/images/HeroBanner.png'
 import { MdArrowOutward } from "react-icons/md";
 import Image from 'next/image'
-import { MainButton } from '../animated/MainButton';
+import { MainButton } from '../../animated/MainButton';
 export const Banner = () => {
     return (
-        <div>
-            <div className="w-full flex justify-center items-cente">
+        <div className='max-w-[1440px] ml-auto mr-auto'>
+            <div className="w-full flex justify-center items-center">
                 <div className="w-full h-[666px] sm:h-[408px] md:h-[500px] lg:h-[666px]">
                     <Image src={BannerImage} alt="Banner" className="object-fill w-full h-full" />
                 </div>
