@@ -4,10 +4,10 @@ import AboutImage from '../../../assets/images/About.png'
 import Rectangle from '../../../assets/icons/rectangle.png'
 import { MainButtonDiv } from '@/components/animated/MainButtonDiv'
 import { MdArrowOutward } from "react-icons/md";
-
+import { motion } from 'framer-motion'
 export const Aboutus = () => {
     return (
-        <div className='max-w-[1440px] ml-auto mr-auto mb-20 '>
+        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14  '>
             <div className='relative'>
                 <Image src={AboutImage} alt="About" className="object-fill w-full h-[851px]" />
 
@@ -48,10 +48,6 @@ export const Aboutus = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
     )
 }

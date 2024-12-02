@@ -25,6 +25,7 @@ const config: Config = {
           grey: '#eff2f7',   // Blue-500
           black: '#000000',    // Blue-700
           button: '#1a2745',
+          blue: '#6490dc',
         },
       },
     },
