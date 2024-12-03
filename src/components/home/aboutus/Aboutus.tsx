@@ -12,13 +12,13 @@ export const Aboutus = () => {
                 <Image src={AboutImage} alt="About" className="object-fill w-full h-[851px]" />
 
                 <div className='bg-primary-grey md:w-[748px] h-[739px] absolute bottom-0 md:-left-8 sm:left-0 sm:w-full'>
-                    <div className='mt-14 mb-14 ml-8 flex flex-col gap-[30px] font-normal text-xl text-primary-button'>
+                    <div className='mt-14 mb-14 ml-8 flex flex-col gap-[30px] font-normal md:text-xl sm:text-base text-primary-button'>
                         <div className='flex items-center gap-3'>
                             <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
                             <p >About Us</p>
                         </div>
                         <div className='flex flex-col gap-6'>
-                            <h1 className='font-space-grotesk font-bold lg:text-5xl md:text-4xl text-primary-button sm:text-4xl'>
+                            <h1 className='font-space-grotesk font-bold md:text-5xl text-primary-button sm:text-2xl'>
                                 Discover Your Dream Home with Our Comprehensive Property Platform
                             </h1>
                             <p>Our platform connects you with a diverse range of properties tailored to your needs. Experience seamless browsing and find your perfect home today.</p>

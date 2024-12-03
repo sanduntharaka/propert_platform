@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 import { PropetieDetail } from '@/components/PropetieDetail';
 
 export const PropetiesSection = () => {
-    return (
+    return (<>
         <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14  '>
             <div className='flex flex-col gap-4 mb-14 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
                 <div className='flex items-center gap-3'>
@@ -145,13 +145,13 @@ export const PropetiesSection = () => {
                     </div>
                 </div>
             </div>
-
-            <div className='mt-10 mb-10 md:hidden'>
-                <div className='flex items-center justify-center gap-3 md:hidden'>
-                    <p >Explore More</p>
-                    <MdArrowOutward className='bg-primary-blue text-white' />
-                </div>
+        </div>
+        <div className='mt-12 mb-12 md:hidden'>
+            <div className='flex items-center justify-center gap-3 md:hidden'>
+                <p >Explore More</p>
+                <MdArrowOutward className='bg-primary-blue text-white' />
             </div>
         </div>
+    </>
     )
 }
