@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
-import AboutImage from '../../../assets/images/About.png'
+import AboutImage from '../../../assets/images/About.webp'
 import Rectangle from '../../../assets/icons/rectangle.png'
 import { MainButtonDiv } from '@/components/animated/MainButtonDiv'
 import { MdArrowOutward } from "react-icons/md";
 import { motion } from 'framer-motion'
 export const Aboutus = () => {
     return (
-        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14  '>
+        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14 bg-red-400 '>
             <div className='relative'>
                 <Image src={AboutImage} alt="About" className="object-fill w-full h-[851px]" />
 
-                <div className='bg-primary-grey  w-[748px] h-[739px] absolute bottom-0 -left-8' >
+                <div className='bg-primary-grey md:w-[748px] h-[739px] absolute bottom-0 md:-left-8 sm:left-0 sm:w-full'>
                     <div className='mt-14 mb-14 ml-8 flex flex-col gap-[30px] font-normal text-xl text-primary-button'>
                         <div className='flex items-center gap-3'>
                             <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />

@@ -14,7 +14,7 @@ export const MainButton = ({ ButtonText, ButtonImage }: MainButton) => {
         >
             {/* Sliding Background */}
             <motion.div
-                className="absolute inset-0 bg-gray-400"
+                className="absolute inset-0 bg-white border border-black"
                 variants={{
                     rest: { y: "100%" }, // Background starts hidden
                     hover: { y: "0%" },  // Background slides up on hover

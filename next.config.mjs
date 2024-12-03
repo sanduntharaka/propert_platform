@@ -27,6 +27,9 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    domains: ['marketvision.ca'], // Add your external image domains here
+  },
 
   // ...other config
 };

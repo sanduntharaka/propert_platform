@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImage from '../../../assets/images/HeroBanner.png'
+import BannerImage from '../../../assets/images/HeroBanner.webp'
 import { MdArrowOutward } from "react-icons/md";
 import Image from 'next/image'
 import { MainButton } from '../../animated/MainButton';
@@ -11,7 +11,7 @@ export const Banner = () => {
                     <Image src={BannerImage} alt="Banner" className="object-fill w-full h-full" />
                 </div>
             </div>
-            <div className="flex flex-col lg:mt-28 lg:mb-28 md:mt-28 md:mb-28 lg:flex-row md:flex-row lg:gap-20 md:gap-20 sm:flex-col sm:mt-14 sm:mb-14 sm:gap-5">
+            <div className="flex flex-col lg:mt-28 lg:mb-28 md:mt-28 md:mb-28 lg:flex-row md:flex-row lg:gap-20 md:gap-20 md:ml-0 md:mr-0 sm:flex-col sm:mt-14 sm:mb-14 sm:gap-5 sm:ml-8 sm:mr-8">
                 <h1 className="font-space-grotesk font-bold lg:text-6xl md:text-5xl text-primary-button sm:text-5xl">
                     Discover Your Dream Property Today!
                 </h1>
