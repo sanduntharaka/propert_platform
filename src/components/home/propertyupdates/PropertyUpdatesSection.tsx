@@ -73,7 +73,7 @@ export const PropertyUpdatesSection = () => {
                                 </h5>
                             </div>
                             <p className='text-base'>
-                                Explore the factors influencing today's real estate market.
+                                Explore the factors influencing today&#39;s real estate market.
                             </p>
 
                         </div>
@@ -97,7 +97,7 @@ export const PropertyUpdatesSection = () => {
                                 </h5>
                             </div>
                             <p className='text-base'>
-                                Explore the factors influencing today's real estate market.
+                                Explore the factors influencing today&#39;s real estate market.
                             </p>
 
                         </div>
