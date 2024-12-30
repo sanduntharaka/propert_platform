@@ -8,7 +8,7 @@ import { MdArrowOutward } from "react-icons/md";
 export const InsightSection = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14 '>
-            #TODO add animations
+            #TODO change flex row to flex column or change to grid
 
             <div className='flex flex-col gap-4 mb-14 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
                 <div className='flex items-center gap-3'>
@@ -34,69 +34,105 @@ export const InsightSection = () => {
 
             <div className='md:h-[822px] md:w-full md:flex md:gap-[22px] sm:inline '>
 
-                <div className='h-full w-[660px] md:flex flex-col md:mb-0 sm:mb-12 sm:hidden'>
-                    <div className='bg-primary-button text-white flex-1 py-[26px] pr-[10px] pl-8 flex flex-col gap-[154px]'>
-                        <div>
+                <div className='h-[822px] w-[660px] md:flex flex-col md:mb-0 sm:mb-12 sm:hidden'>
+                    <div className='bg-primary-button text-white flex-1 pr-[10px] pl-8 flex flex-col justify-between gap-[154px] box-border'>
+                        <div className='mt-7'>
                             <div className='flex items-center gap-3 mb-4'>
                                 <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
                                 <p >Investment</p>
                             </div>
                             <h4 className='text-2xl font-bold font-space-grotesk '>Maximize Your Property Investment Returns</h4>
                         </div>
-                        <p className='text-base'>28 November 2024</p>
+                        <p className='text-base mb-[26px]'>28 November 2024</p>
                     </div>
-                    <div className='flex-1 '>
+                    <div className='flex-1'>
                         <Image src={Img1} alt="insight image" className='w-full h-full object-cover' />
                     </div>
 
                 </div>
                 <div className="md:w-[760px] text-primary-button flex flex-col gap-[22px] md:px-0 sm:px-[20px]">
                     <div className='flex justify-between gap-[22px] md:flex-row sm:flex-col'>
-                        <div className="flex-1 bg-primary-grey py-[26px] pr-[10px] pl-[26px] md:w-[352px] md:h-[400px] sm:w-full  flex flex-col gap-[154px] ">
-                            <div>
-                                <div className='flex items-center gap-3 mb-4'>
-                                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                                    <p >Investment</p>
+
+
+                        <div className="flex-1 group   bg-primary-grey py-[26px] md:w-[352px] md:h-[400px] sm:w-full hover:h-[510px] relative">
+                            <div className="flex flex-col justify-between gap-[154px] h-full pr-[10px] pl-[26px]">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <Image src={Rectangle} alt="Rectangle" className="w-[10px] h-[10px]" />
+                                        <p>Investment</p>
+                                    </div>
+                                    <h4 className="text-xl font-bold font-space-grotesk">Maximize Your Property Investment Returns</h4>
                                 </div>
-                                <h4 className='text-xl font-bold font-space-grotesk '>Maximize Your Property Investment Returns</h4>
+                                <p className="text-sm opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                                    28 November 2024
+                                </p>
                             </div>
-                            <p className='text-sm'>28 November 2024</p>
+
+                            <div className="h-[221px] w-full hidden group-hover:block group-hover:absolute bottom-0">
+                                <Image src={Img1} alt="insight image" className="w-full h-full object-cover" />
+                            </div>
                         </div>
 
-                        <div className="flex-1 bg-primary-grey py-[26px] pr-[10px] pl-[26px] md:w-[352px] md:h-[400px] sm:w-full  flex flex-col gap-[154px]">
-                            <div>
-                                <div className='flex items-center gap-3 mb-4'>
-                                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                                    <p >Investment</p>
+                        <div className="flex-1 group   bg-primary-grey py-[26px] md:w-[352px] md:h-[400px] sm:w-full hover:h-[510px] relative">
+                            <div className="flex flex-col justify-between gap-[154px] h-full pr-[10px] pl-[26px]">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <Image src={Rectangle} alt="Rectangle" className="w-[10px] h-[10px]" />
+                                        <p>Investment</p>
+                                    </div>
+                                    <h4 className="text-xl font-bold font-space-grotesk">Tips for First-Time Home Buyers</h4>
                                 </div>
-                                <h4 className='text-xl font-bold font-space-grotesk '>Tips for First-Time Home Buyers</h4>
+                                <p className="text-sm opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                                    28 November 2024
+                                </p>
                             </div>
-                            <p className='text-sm'>28 November 2024</p>
+
+                            <div className="h-[221px] w-full hidden group-hover:block group-hover:absolute bottom-0">
+                                <Image src={Img1} alt="insight image" className="w-full h-full object-cover" />
+                            </div>
                         </div>
                     </div>
 
                     <div className='flex justify-between gap-[22px] md:flex-row sm:flex-col'>
 
-                        <div className="flex-1 bg-primary-grey py-[26px] pr-[10px] pl-[26px] md:w-[352px] md:h-[400px] sm:w-full  flex flex-col gap-[154px]">
-                            <div>
-                                <div className='flex items-center gap-3 mb-4'>
-                                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                                    <p >Investment</p>
-                                </div>
-                                <h4 className='text-xl font-bold font-space-grotesk '>The Future of Real Estate Investment</h4>
-                            </div>
-                            <p className='text-sm'>28 November 2024</p>
-                        </div>
-                        <div className="flex-1 md:bg-primary-button md:text-white sm:bg-primary-grey py-[26px] pr-[10px] pl-[26px] md:w-[352px] md:h-[400px] sm:w-full  flex flex-col gap-[154px]">
-                            <div>
-                                <div className='flex items-center gap-3 mb-4'>
-                                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                                    <p >Investment</p>
-                                </div>
-                                <h4 className='text-xl font-bold font-space-grotesk '>Financing Your Next Property Purchase</h4>
-                            </div>
-                            <p className='text-sm'>28 November 2024</p>
 
+                        <div className="flex-1 group   bg-primary-grey py-[26px] md:w-[352px] md:h-[400px] sm:w-full">
+                            <div className="flex flex-col justify-between gap-[154px] h-full pr-[10px] pl-[26px]">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <Image src={Rectangle} alt="Rectangle" className="w-[10px] h-[10px]" />
+                                        <p>Investment</p>
+                                    </div>
+                                    <h4 className="text-xl font-bold font-space-grotesk">The Future of Real Estate Investment</h4>
+                                </div>
+                                <p className="text-sm opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                                    28 November 2024
+                                </p>
+                            </div>
+
+                            <div className="h-[221px] w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <Image src={Img1} alt="insight image" className="w-full h-full object-cover" />
+                            </div>
+                        </div>
+
+                        <div className="flex-1 group md:bg-primary-button md:text-white sm:bg-primary-grey py-[26px] md:w-[352px] md:h-[400px] sm:w-full">
+                            <div className="flex flex-col justify-between gap-[154px] h-full pr-[10px] pl-[26px]">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <Image src={Rectangle} alt="Rectangle" className="w-[10px] h-[10px]" />
+                                        <p>Investment</p>
+                                    </div>
+                                    <h4 className="text-xl font-bold font-space-grotesk">Financing Your Next Property Purchase</h4>
+                                </div>
+                                <p className="text-sm opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                                    28 November 2024
+                                </p>
+                            </div>
+
+
+                            <div className="h-[221px] w-full hidden group-hover:block">
+                                <Image src={Img1} alt="insight image" className="w-full h-full object-cover" />
+                            </div>
                         </div>
 
                     </div>

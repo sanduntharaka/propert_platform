@@ -19,7 +19,7 @@ export const MainButtonDiv = ({ ButtonText, ButtonImage }: MainButton) => {
                     rest: { y: "100%" }, // Background starts hidden
                     hover: { y: "0%" },  // Background slides up on hover
                 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
             />
 
             {/* Original Background */}
@@ -29,7 +29,7 @@ export const MainButtonDiv = ({ ButtonText, ButtonImage }: MainButton) => {
                     rest: { y: "0%" },   // Original background visible
                     hover: { y: "-100%" }, // Original background slides up on hover
                 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
             />
 
             {/* Text */}
@@ -39,7 +39,7 @@ export const MainButtonDiv = ({ ButtonText, ButtonImage }: MainButton) => {
                     rest: { color: "#FFF" }, // White text by default
                     hover: { color: "#000" }, // Black text on hover
                 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
             >
                 {ButtonText}
                 {ButtonImage}
