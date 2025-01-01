@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/components/navbar/NavBar";
 import clsx from 'clsx';
+import { Footer } from "@/components/footer/Footer";
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={clsx(roboto.className, "antialiased bg-white md:ml-8 md:mr-8 scroll-smooth")}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

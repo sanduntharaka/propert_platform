@@ -43,7 +43,7 @@ export const NavBar = () => {
             <div className="max-w-[1440px] mx-auto px-8">
                 <div className="py-4 flex items-center justify-between">
                     <div>
-                        <p className="font-bold text-2xl">LEGIBROOK</p>
+                        <p className="font-bold text-2xl">LEIGBROOK</p>
                     </div>
                     <nav className="gap-6 items-center hidden md:flex">
                         {routes?.map((route: Route, index: number) => (

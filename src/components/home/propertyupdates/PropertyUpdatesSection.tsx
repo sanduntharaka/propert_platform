@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export const PropertyUpdatesSection = () => {
     return (
-        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14  flex flex-col gap-4 pt-28 pb-28 '>
+        <div className='max-w-[1440px] ml-auto mr-auto  lg:mb-28 md:mb-28 sm:mb-14  flex flex-col gap-4 '>
 
             <div className='flex flex-col gap-4 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8 '>
                 <div className='flex items-center gap-3'>

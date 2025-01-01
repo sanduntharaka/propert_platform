@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export const InsightSection = () => {
     return (
-        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14 '>
+        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28 sm:mb-14 '>
             #TODO change flex row to flex column or change to grid
 
             <div className='flex flex-col gap-4 mb-14 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
@@ -31,6 +31,7 @@ export const InsightSection = () => {
                     </div>
                 </div>
             </div>
+
 
             <div className='md:h-[822px] md:w-full md:flex md:gap-[22px] sm:inline '>
 
@@ -139,6 +140,23 @@ export const InsightSection = () => {
 
 
                 </div>
+
+
+                {/* <div className="md:w-[726px] text-primary-button grid grid-cols-2 md:px-0 sm:px-[20px] bg-green-300">
+                    <div className="grid gap-[22px] flex-col bg-green-100 relative">
+                        <div className="group bg-blue-500 py-[26px] md:w-[352px] md:h-[400px] sm:w-full hover:h-[510px] relative overflow-hidden transition-all duration-300">
+                            <div className="absolute bottom-0 w-full h-[221px] bg-red-300 group-hover:h-[331px] transition-all duration-300"></div>
+                        </div>
+                        <div className="bg-primary-grey py-[26px] md:w-[352px] md:h-[400px] sm:w-full"></div>
+                    </div>
+                    <div className="grid gap-[22px] flex-col bg-green-100 relative">
+                        <div className="group bg-blue-500 py-[26px] md:w-[352px] md:h-[400px] sm:w-full hover:h-[510px] relative overflow-hidden transition-all duration-300">
+                            <div className="absolute bottom-0 w-full h-[221px] bg-red-300 group-hover:h-[331px] transition-all duration-300"></div>
+                        </div>
+                        <div className="bg-primary-grey py-[26px] md:w-[352px] md:h-[400px] sm:w-full"></div>
+                    </div>
+                </div> */}
+
 
 
             </div>
