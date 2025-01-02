@@ -13,16 +13,16 @@ import youtube from '../../assets/icons/youtube.png'
 export const Footer = () => {
     return (
         <div className="max-w-[1440px] mr-auto ml-auto box-border">
-            <div className="bg-primary-button h-[873px] -mr-8 -ml-8 flex flex-col gap-28 pt-28 pl-8 pr-8">
-                <div className="h-[248px] text-white flex gap-[120px]">
-                    <div className='flex flex-col gap-4 w-[560px] '>
+            <div className="bg-primary-button md:h-[873px] sm:h-[1450px] -mr-8 -ml-8 flex flex-col md:gap-28 sm:gap-12  md:pt-28 sm:pt-12 pl-8 pr-8">
+                <div className="md:h-[248px] sm:h-[950px] text-white flex justify-between md:gap-[120px] sm:gap-12 md:flex-row sm:flex-col md:p-0 sm:p-5 ">
+                    <div className='flex-1 flex flex-col gap-4   '>
                         <p className="font-bold text-2xl">LEIGBROOK</p>
                         <p>Stay informed with our latest features and updates.</p>
                         <div>
-                            <div className='flex gap-4  justify-between mb-3'>
+                            <div className='flex gap-3 justify-between mb-3'>
                                 <input
                                     type="text"
-                                    className="w-[496px] h-12 p-3 border-2 border-[#6390DB] bg-primary-button focus:border-[#6390DB] focus:outline-none"
+                                    className="flex-1 h-12 p-3 border-2 border-[#6390DB] bg-primary-button focus:border-[#6390DB] focus:outline-none"
                                     placeholder='Enter your email'
                                 />
                                 <button className='bg-primary-blue w-12 h-12 flex items-center justify-center text-white'>
@@ -33,9 +33,9 @@ export const Footer = () => {
                         </div>
 
                     </div>
-                    <div className='flex flex-row gap-8 justify-between w-[696px] '>
+                    <div className='flex-1 flex gap-8 justify-between md:flex-row sm:flex-col '>
 
-                        <div className=' w-[210px] h-full flex flex-col gap-4'>
+                        <div className=' flex-1 flex flex-col gap-4'>
                             <p className='text-base font-semibold'>Quick Links</p>
                             <p className='text-sm font-normal' >About Us</p>
                             <p className='text-sm font-normal' >Contact Support</p>
@@ -44,7 +44,7 @@ export const Footer = () => {
                             <p className='text-sm font-normal' >Blog Updates</p>
 
                         </div>
-                        <div className=' w-[210px] h-full flex flex-col gap-4'>
+                        <div className=' flex-1  flex flex-col gap-4'>
                             <p className='text-base font-semibold'>Resources</p>
                             <p className='text-sm font-normal' >FAQs</p>
                             <p className='text-sm font-normal' >Customer Service</p>
@@ -53,7 +53,7 @@ export const Footer = () => {
                             <p className='text-sm font-normal' >Testimonials</p>
 
                         </div>
-                        <div className=' w-[210px] h-full flex flex-col gap-4'>
+                        <div className=' flex-1 flex flex-col gap-4 '>
                             <p className='text-base font-semibold'>Follow Us</p>
 
                             <div className='flex gap-4'>
@@ -83,22 +83,21 @@ export const Footer = () => {
 
                             </div>
 
-
-
-
                         </div>
                     </div>
                 </div>
-                <div className="h-[289px] text-white">
+                <div className="h-[289px] text-white ">
                     <Image src={footer_big} alt='facebook' />
-                    <div className='border-t-2 border-primary-grey mt-12'></div>
-                    <div className='flex justify-between mt-12'>
+                    <div className='border-t-2 border-primary-grey mt-12 ml-8 mr-8'></div>
+                    <div className='flex justify-between mt-12 md:flex-row ml-8 mr-8 flex-col-reverse sm:gap-8 md:gap-0'>
                         <p>© 2024 Leigbrook. All rights reserved.</p>
-                        <div className='flex gap-4'>
+                        <div className='flex gap-4 sm:flex-col md:flex-row'>
                             <p>Privacy Policy</p>
                             <p> Terms of Service</p>
                             <p>Cookies Settings</p>
                         </div>
+                        {/* <p className='sm:inline-flex md:hidden'>© 2024 Leigbrook. All rights reserved.</p> */}
+
                     </div>
                 </div>
             </div>
