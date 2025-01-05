@@ -15,6 +15,9 @@ const config: Config = {
       lg: "1024px",
     },
     extend: {
+      fontFamily: {
+        gellix: ['Gellix', 'sans-serif'], // Add Gellix as a utility class
+      },
       container: {
         center: true,
         padding: '1rem',
@@ -30,73 +33,12 @@ const config: Config = {
         },
       },
 
-      typography: {
-        DEFAULT: {
-          css: {
-            h1: {
-              fontSize: '3.5rem',
-              lineHeight: '120%',
-              fontWeight: '700',
-            },
-            h2: {
-              fontSize: '3rem',
-              lineHeight: '120%',
-              fontWeight: '700',
-
-            },
-            h3: {
-              fontSize: '2.5rem',
-              lineHeight: '120%',
-              fontWeight: '700',
-
-            },
-            h4: {
-              fontSize: '2rem',
-              lineHeight: '130%',
-              fontWeight: '700',
-
-            },
-            h5: {
-              fontSize: '1.5rem',
-              lineHeight: '140%',
-              fontWeight: '700',
-
-            },
-            h6: {
-              fontSize: '1.25rem',
-              lineHeight: '140%',
-              fontWeight: '700',
-
-            },
-          },
-        },
-
-        sm: {
-          css: {
-            h1: {
-              fontSize: '2.5rem',
-            },
-            h2: {
-              fontSize: '2.25rem',
-
-            },
-            h3: {
-              fontSize: '2rem',
-
-            },
-            h4: {
-              fontSize: '1.5rem',
-
-            },
-            h5: {
-              fontSize: '1.25rem',
-
-            },
-            h6: {
-              fontSize: '1.125rem',
-            },
-          },
-        },
+      fontSize: {
+        lg: ['1.25rem', '1.5'], // font-size: 1.25rem; line-height: 150%;
+        md: ['1.125rem', '1.5'], // font-size: 1.125rem; line-height: 150%;
+        base: ['1rem', '1.5'], // font-size: 1rem; line-height: 150%;
+        sm: ['0.875rem', '1.5'], // font-size: 0.875rem; line-height: 150%;
+        tiny: ['0.75rem', '1.5'], // font-size: 0.75rem; line-height: 150%;
       },
     },
   },

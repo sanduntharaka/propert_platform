@@ -9,40 +9,45 @@ export const Aboutus = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14 bg-red-400 '>
             <div className='relative'>
-                <Image src={AboutImage} alt="About" className="object-fill w-full h-[851px]" />
+                <Image src={AboutImage} alt="About" className="object-fill w-full lg:h-[851px] md:[525px] " />
 
-                <div className='bg-primary-grey md:w-[748px] h-[739px] absolute bottom-0 md:-left-8 sm:left-0 sm:w-full'>
+                <div className='bg-primary-grey lg:w-[748px] md:w-[433px] lg:h-[739px] md:h-[461px] absolute bottom-0 md:-left-8 sm:left-0 sm:w-full'>
                     <div className='mt-14 mb-14 ml-8 flex flex-col gap-[30px] font-normal md:text-xl sm:text-base text-primary-button'>
-                        <div className='flex items-center gap-3'>
-                            <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                            <p >About Us</p>
-                        </div>
-                        <div className='flex flex-col gap-6'>
-                            <h1 className='font-space-grotesk font-bold md:text-5xl text-primary-button sm:text-2xl'>
+                        <div className='flex flex-col gap-[18px]'>
+                            <div className='flex items-center gap-3'>
+                                <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
+                                <p className='tagline'>About Us</p>
+                            </div>
+                            <h2 className='font-gellix font-bold text-primary-button'>
                                 Discover Your Dream Home with Our Comprehensive Property Platform
-                            </h1>
-                            <p>Our platform connects you with a diverse range of properties tailored to your needs. Experience seamless browsing and find your perfect home today.</p>
+                            </h2>
+                            <p className='lg:text-base md:text-tiny sm:text-base'>Our platform connects you with a diverse range of properties tailored to your needs. Experience seamless browsing and find your perfect home today.</p>
+
 
                         </div>
-                        <div className='flex flex-col gap-6 w-1/2'>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                                <p className='text-xl font-bold'>Why Choose Us</p>
+                        <div className='flex flex-col gap-[18px] w-1/2'>
+                            <div className='flex flex-col gap-3' >
+                                <div className='flex items-center gap-3'>
+                                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
+                                    <h6 className='font-gellix font-bold'>Why Choose Us</h6>
+                                </div>
+                                <p className='lg:text-base md:text-tiny sm:text-base'>
+                                    We provide expert insights and a user-friendly experience for all your property needs.
+                                </p>
                             </div>
-                            <p className='text-base '>
-                                We provide expert insights and a user-friendly experience for all your property needs.
-                            </p>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                                <p className='text-xl font-bold'>Get Started</p>
+                            <div className='flex flex-col gap-3' >
+                                <div className='flex items-center gap-3'>
+                                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
+                                    <h6 className='font-gellix font-bold'>Get Started</h6>
+                                </div>
+                                <p className='lg:text-base md:text-tiny sm:text-base'>
+                                    Join our community and unlock exclusive access to the best properties available.
+                                </p>
                             </div>
-                            <p className='text-base '>
-                                Join our community and unlock exclusive access to the best properties available.
-                            </p>
 
-                            <MainButtonDiv ButtonText="About Us" ButtonImage={<MdArrowOutward />} />
 
                         </div>
+                        <MainButtonDiv ButtonText="About Us" ButtonImage={<MdArrowOutward />} />
 
 
                     </div>

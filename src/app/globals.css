@@ -4,9 +4,158 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+
+:root {
+    --blue: #1e90ff;
+    --red: red;
+    --green: green;
+  }
+
 .font-space-grotesk {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    
+}
+
+h1{
+    background-color: var(--red);
+    font-size: 2.5rem;
+    line-height: 120%;
+
+}
+
+h2{
+    background-color: var(--red);
+    font-size: 2.25rem;
+    line-height: 120%;
+
+}
+
+h3{
+    background-color: var(--red);
+    font-size: 2rem;
+    line-height: 120%;
+
+}
+
+h4{
+    background-color: var(--red);
+    font-size: 1.5rem;
+    line-height: 140%;
+
+}
+
+h5{
+    background-color: var(--red);
+    font-size: 1.25rem;
+    line-height: 140%;
+
+}
+
+h6{
+    background-color: var(--red);
+    font-size: 1.125rem;
+    line-height: 140%;
+
+}
+
+.tagline{
+    font-size: 1rem;
+    line-height: 150%;
+
+}
+
+
+
+
+
+
+/* tablet */
+@media (min-width: 640px) {
+    h1 {
+        background-color: var(--blue);
+        font-size: 3.5rem;
+        line-height: 120%;
+    }
+
+    h2{
+        background-color: var(--blue);
+        font-size: 3rem;
+        line-height: 120%;
+    
+    }
+
+    h3{
+        background-color: var(--blue);
+        font-size: 2.5rem;
+        line-height: 120%;
+    
+    }
+    
+    h4{
+        background-color: var(--blue);
+        font-size: 2rem;
+        line-height: 130%;
+    
+    }
+    
+    h5{
+        background-color: var(--blue);
+        font-size: 1.5rem;
+        line-height: 140%;
+    
+    }
+    
+    h6{
+        background-color: var(--blue);
+        font-size: 1.25rem;
+        line-height: 140%;
+    
+    }
+}
+
+/* web */
+@media (min-width: 1024px) {
+    h1 {
+        background-color: var(--green);
+        font-size: 3.5rem;
+        line-height: 120%;
+    }
+
+    h2{
+        background-color: var(--green);
+        font-size: 3rem;
+        line-height: 120%;
+    
+    }
+
+    h3{
+        background-color: var(--green);
+        font-size: 2.5rem;
+        line-height: 120%;
+    
+    }
+    
+    h4{
+        background-color: var(--green);
+        font-size: 2rem;
+        line-height: 130%;
+    
+    }
+    
+    h5{
+        background-color: var(--green);
+        font-size: 1.5rem;
+        line-height: 140%;
+    
+    }
+    
+    h6{
+        background-color: var(--green);
+        font-size: 1.25rem;
+        line-height: 140%;
+    
+    }
     
 }

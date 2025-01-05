@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import '@/styles/fonts/gellix/stylesheet.css';
 import "./globals.css";
 import { NavBar } from "@/components/navbar/NavBar";
 import clsx from 'clsx';
@@ -22,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
+
       <body className={clsx(roboto.className, "antialiased bg-white md:ml-8 md:mr-8 scroll-smooth")}>
         <NavBar />
         {children}

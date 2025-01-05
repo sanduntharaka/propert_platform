@@ -12,11 +12,11 @@ export const Banner = () => {
                 </div>
             </div>
             <div className="flex flex-col lg:mt-28 lg:mb-28 md:mt-28 md:mb-28 lg:flex-row md:flex-row lg:gap-20 md:gap-20 md:ml-0 md:mr-0 sm:flex-col sm:mt-14 sm:mb-14 sm:gap-5 sm:ml-8 sm:mr-8">
-                <h1 className="font-space-grotesk font-bold lg:text-6xl md:text-5xl text-primary-button sm:text-[40px]">
+                <h1 className="font-gellix font-bold text-primary-button">
                     Discover Your Dream Property Today!
                 </h1>
                 <div className="flex flex-col justify-start gap-8">
-                    <p className="font-normal lg:text-xl md:text-xl sm:text-base ">
+                    <p className="font-normal lg:text-md md:text-sm sm:text-base ">
                         Explore a wide range of properties tailored to your needs. Our platform connects you with the perfect home in just a few clicks.
                     </p>
                     <MainButton ButtonText="Explore" ButtonImage={<MdArrowOutward />} />
