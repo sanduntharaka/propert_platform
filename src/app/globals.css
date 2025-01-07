@@ -18,7 +18,7 @@
     
 }
 
-h1{
+/* h1{
     background-color: var(--red);
     font-size: 2.5rem;
     line-height: 120%;
@@ -72,7 +72,7 @@ h6{
 
 
 /* tablet */
-@media (min-width: 640px) {
+/*@media (min-width: 640px) {
     h1 {
         background-color: var(--blue);
         font-size: 3.5rem;
@@ -111,50 +111,200 @@ h6{
         background-color: var(--blue);
         font-size: 1.25rem;
         line-height: 140%;
+    
+    }
+}*/
+
+/* web */
+/*@media (min-width: 1024px) {
+    h1 {
+        background-color: var(--green);
+        font-size: 3.5rem;
+        line-height: 120%;
+    }
+
+    h2{
+        background-color: var(--green);
+        font-size: 3rem;
+        line-height: 120%;
+    
+    }
+
+    h3{
+        background-color: var(--green);
+        font-size: 2.5rem;
+        line-height: 120%;
+    
+    }
+    
+    h4{
+        background-color: var(--green);
+        font-size: 2rem;
+        line-height: 130%;
+    
+    }
+    
+    h5{
+        background-color: var(--green);
+        font-size: 1.5rem;
+        line-height: 140%;
+    
+    }
+    
+    h6{
+        background-color: var(--green);
+        font-size: 1.25rem;
+        line-height: 140%;
+    
+    }
+    
+} */
+
+
+
+
+
+.tagline{
+    background-color: red;
+    font-size: 1rem;
+    line-height: 150%;
+
+}
+
+@media (min-width: 375px) {
+
+    h1{
+        background-color: var(--red);
+        font-size: 32px;
+        line-height: 40px;
+    
+    }
+    
+    h2{
+        background-color: var(--red);
+        font-size: 28px;
+        line-height: 36px;
+    
+    }
+    
+    h3{
+        background-color: var(--red);
+        font-size: 24px;
+        line-height: 30px;
+    
+    }
+    
+    h4{
+        background-color: var(--red);
+        font-size: 20px;
+        line-height: 28px;
+    
+    }
+    
+    h5{
+        background-color: var(--red);
+        font-size: 18px;
+        line-height: 24px;
+    
+    }
+    
+    h6{
+        background-color: var(--red);
+        font-size: 16px;
+        line-height: 22px;
+    
+    }
+
+
+}
+
+
+
+
+/* tablet */
+@media (min-width: 768px) {
+    h1 {
+        background-color: var(--blue);
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    h2{
+        background-color: var(--blue);
+        font-size: 28px;
+        line-height: 36px;
+    
+    }
+
+    h3{
+        background-color: var(--blue);
+        font-size: 24px;
+        line-height: 32px;
+    
+    }
+    
+    h4{
+        background-color: var(--blue);
+        font-size: 20px;
+        line-height: 28px;
+    
+    }
+    
+    h5{
+        background-color: var(--blue);
+        font-size: 18px;
+        line-height: 24px;
+    
+    }
+    
+    h6{
+        background-color: var(--blue);
+        font-size: 16px;
+        line-height: 22px;
     
     }
 }
 
 /* web */
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     h1 {
         background-color: var(--green);
-        font-size: 3.5rem;
-        line-height: 120%;
+        font-size: 67.2px;
+        line-height: 80px;
     }
 
     h2{
         background-color: var(--green);
-        font-size: 3rem;
-        line-height: 120%;
+        font-size: 57.6px;
+        line-height: 70px;
     
     }
 
     h3{
         background-color: var(--green);
-        font-size: 2.5rem;
-        line-height: 120%;
+        font-size: 48px;
+        line-height: 60px;
     
     }
     
     h4{
         background-color: var(--green);
-        font-size: 2rem;
-        line-height: 130%;
+        font-size: 41.6px;
+        line-height: 50px;
     
     }
     
     h5{
         background-color: var(--green);
-        font-size: 1.5rem;
-        line-height: 140%;
+        font-size: 33px;
+        line-height: 40px;
     
     }
     
     h6{
         background-color: var(--green);
-        font-size: 1.25rem;
-        line-height: 140%;
+        font-size: 28px;
+        line-height: 35px;
     
     }
     

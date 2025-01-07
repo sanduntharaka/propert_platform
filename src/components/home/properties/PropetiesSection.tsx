@@ -14,29 +14,30 @@ import { PropetieDetail } from '@/components/PropetieDetail';
 
 export const PropetiesSection = () => {
     return (<>
-        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-28  sm:mb-14  '>
-            <div className='flex flex-col gap-4 mb-14 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
+        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-16  sm:mb-14  '>
+            <div className='flex flex-col lg:gap-4 md:gap-[9px] sm:gap-4 lg:mb-14 md:mb-8 sm:mb-14 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
                 <div className='flex items-center gap-3'>
-                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                    <p >Properties</p>
+                    <Image src={Rectangle} alt="Rectangle" className='lg:w-[10px] lg:h-[10px] sm:w-[10px] sm:h-[10px] md:w-[5.79px] md:h-[5.79px]' />
+                    <p className='lg:text-base sm:text-base md:text-tiny_2 '>Properties</p>
                 </div>
 
 
-                <h1 className='font-space-grotesk font-bold lg:text-5xl md:text-4xl text-primary-button sm:text-4xl'>
+                <h2 className='font-gellix font-bold  text-primary-button'>
                     Discover Your Dream Home
-                </h1>
+                </h2>
 
-                <div className='flex justify-between text-xl'>
+                <div className='flex justify-between lg:text-xl md:text-tiny sm:text-xl'>
                     <p>
                         Explore our exclusive featured properties today.
                     </p>
                     <div className='md:flex items-center gap-3 sm:hidden'>
-                        {/* <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' /> */}
-                        <p >Explore More</p>
-                        <MdArrowOutward className='bg-primary-blue text-white' />
+
+                        <p className='lg:text-base md:text-tiny_2 sm:text-base'>Explore More</p>
+                        <MdArrowOutward className='bg-primary-blue text-white lg:w-[24px] lg:h-[24px] md:w-[13px] md:h-[13px]' />
                     </div>
                 </div>
             </div>
+            #TODO tablet responsive
             {/* properties show here */}
             <div className='md:flex md:flex-row md:justify-evenly md:h-[1771px] sm:gap-10 text-primary-button sm:grid'>
                 <div className='flex-1 flex flex-col md:gap-4'>

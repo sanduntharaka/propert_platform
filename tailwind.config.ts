@@ -12,7 +12,7 @@ const config: Config = {
     screens: {
       sm: "375px",
       md: "768px",
-      lg: "1024px",
+      lg: "1440px",
     },
     extend: {
       fontFamily: {
@@ -39,6 +39,8 @@ const config: Config = {
         base: ['1rem', '1.5'], // font-size: 1rem; line-height: 150%;
         sm: ['0.875rem', '1.5'], // font-size: 0.875rem; line-height: 150%;
         tiny: ['0.75rem', '1.5'], // font-size: 0.75rem; line-height: 150%;
+        tiny_2: ['0.625rem', '1.5'], // font-size: 0.75rem; line-height: 150%;
+
       },
     },
   },
