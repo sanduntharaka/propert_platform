@@ -9,7 +9,7 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 export const ContactSection = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto'>
-            <div className='bg-primary-grey pt-28 pb-28 pr-8 pl-8 flex flex-col gap-16 -mr-8 -ml-8'>
+            <div className='bg-primary-grey pt-28 pb-28 pr-8 pl-8 flex flex-col gap-16 md:-mr-8 md:-ml-8'>
                 <div className='flex gap-20 md:flex-row sm:flex-col'>
                     <div className='flex flex-col gap-4 mb-14 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
                         <div className='flex items-center gap-3'>
@@ -29,7 +29,7 @@ export const ContactSection = () => {
                         </div>
                     </div>
 
-                    <div className=' w-[500px] flex flex-col gap-6 pt-2 pb-2 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
+                    <div className='md:w-[500px] flex flex-col gap-6 pt-2 pb-2 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8'>
                         <div className='flex gap-4'>
                             <AiOutlineMail size={20} className='text-[#6390DB] ' />
                             <div className='flex flex-col gap-2'>
@@ -55,7 +55,7 @@ export const ContactSection = () => {
                 </div>
 
                 <div>
-                    <Image src={AboutImage} alt="About" className="cover" />
+                    <Image src={AboutImage} alt="About" className="cover " />
 
                 </div>
 

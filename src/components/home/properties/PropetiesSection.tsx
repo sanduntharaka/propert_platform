@@ -37,13 +37,12 @@ export const PropetiesSection = () => {
                     </div>
                 </div>
             </div>
-            #TODO tablet responsive
             {/* properties show here */}
-            <div className='md:flex md:flex-row md:justify-evenly md:h-[1771px] sm:gap-10 text-primary-button sm:grid'>
-                <div className='flex-1 flex flex-col md:gap-4'>
-                    <div className='relative md:h-[1175px] sm:h-[577px] md:overflow-hidden'>
+            <div className='md:flex md:flex-row md:justify-evenly lg:h-[1771px] md:h-[1000px] lg:gap-10 md:gap-3 sm:gap-10 text-primary-button sm:grid'>
+                <div className='flex-1 flex flex-col lg:gap-4 md:gap-3 sm:gap-4'>
+                    <div className='relative lg:h-[1175px] md:h-[685px] sm:h-[577px] md:overflow-hidden'>
                         <motion.div
-                            className="relative md:w-full md:h-[1051px] sm:h-[400px] inset-0"
+                            className="relative lg:w-full md:min-w-[390px] lg:h-[1051px] md:h-[605px] sm:h-[400px] inset-0"
                             initial={{ scale: 1.05 }}
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true, amount: 0.1 }}
@@ -65,9 +64,9 @@ export const PropetiesSection = () => {
                         />
 
                     </div>
-                    <div className='relative md:h-[577px] sm:h-[583px]  md:overflow-hidden'>
+                    <div className='relative lg:h-[577px] md:h-[334px]  md:overflow-hidden'>
                         <motion.div
-                            className="relative md:w-full h-[450px] inset-0"
+                            className="relative lg:w-full md:min-w-[390px]   lg:h-[450px] md:h-[260px]  sm:h-[400px] inset-0"
                             initial={{ scale: 1.1 }}
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true, amount: 0.1 }}
@@ -86,10 +85,10 @@ export const PropetiesSection = () => {
 
                     </div>
                 </div>
-                <div className='flex-1 flex flex-col md:gap-[20px] sm:gap-[50px]'>
-                    <div className='relative h-[577px]  md:overflow-hidden'>
+                <div className='flex-1 flex flex-col lg:gap-4 md:gap-3 sm:gap-4'>
+                    <div className='relative lg:h-[577px] md:h-[334px]   md:overflow-hidden'>
                         <motion.div
-                            className="relative md:w-full h-[450px] inset-0"
+                            className="relative lg:w-full md:min-w-[390px]  lg:h-[450px] md:h-[260px]  sm:h-[400px] inset-0"
                             initial={{ scale: 1.1 }}
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true, amount: 0.1 }}
@@ -106,9 +105,9 @@ export const PropetiesSection = () => {
 
 
                     </div>
-                    <div className='relative h-[577px]  md:overflow-hidden'>
+                    <div className='relative lg:h-[577px] md:h-[334px]   md:overflow-hidden'>
                         <motion.div
-                            className="relative md:w-full h-[450px] inset-0"
+                            className="relative lg:w-full md:min-w-[390px]  lg:h-[450px] md:h-[260px]  sm:h-[400px] inset-0"
                             initial={{ scale: 1.1 }}
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true, amount: 0.1 }}
@@ -126,9 +125,9 @@ export const PropetiesSection = () => {
 
 
                     </div>
-                    <div className='relative h-[577px]  md:overflow-hidden'>
+                    <div className='relative lg:h-[577px] md:h-[334px]  md:overflow-hidden'>
                         <motion.div
-                            className="relative md:w-full h-[450px] inset-0"
+                            className="relative lg:w-full md:min-w-[390px]  lg:h-[450px] md:h-[260px]  sm:h-[400px] inset-0"
                             initial={{ scale: 1.1 }}
                             whileInView={{ scale: 1 }}
                             viewport={{ once: true, amount: 0.1 }}

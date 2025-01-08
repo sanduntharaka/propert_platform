@@ -5,6 +5,31 @@ import propimg1 from '../../../assets/images/Placeholder Image1.webp'
 import { MainButtonDiv } from '@/components/animated/MainButtonDiv'
 import { MdArrowOutward } from "react-icons/md";
 
+
+const ArticleCard = () => (
+    <div className="h-[36rem] w-full max-w-lg bg-white relative mx-auto md:mx-0">
+        <Image src={propimg1} alt="insight image" className="w-full h-72" />
+        <div className="h-96 w-11/12 bg-primary-grey absolute bottom-0 p-8 flex flex-col justify-between">
+            <div className="flex flex-col gap-4">
+                <p className="font-semibold text-sm flex gap-2">
+                    <span>Real Estate</span> <span>5 min read</span>
+                </p>
+                <div className="md:prose sm:prose-sm">
+                    <h5>Understanding Current Market Trends</h5>
+                </div>
+                <p className="text-base">
+                    Explore the factors influencing today's real estate market.
+                </p>
+            </div>
+            <button className="flex items-center gap-2">
+                Learn More <MdArrowOutward />
+            </button>
+        </div>
+    </div>
+);
+
+
+
 export const PropertyUpdatesSection = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto  lg:mb-28 md:mb-28 sm:mb-14  flex flex-col gap-4 '>
@@ -35,7 +60,7 @@ export const PropertyUpdatesSection = () => {
                 </div>
             </div>
 
-            <div className='flex gap-8 justify-between sm:flex-col md:flex-row'>
+            {/* <div className='flex gap-8 justify-between sm:flex-col md:flex-row'>
                 <div className='h-[555px] w-[437px] bg-white relative sm:ml-auto sm:mr-auto md:ml-0 md:mr-0'>
                     <Image src={propimg1} alt="insight image" className='w-[437px] h-[300px]' />
                     <div className='h-[371px] w-[357px] bg-primary-grey absolute bottom-0 p-8 flex flex-col justify-between'>
@@ -110,7 +135,15 @@ export const PropertyUpdatesSection = () => {
 
 
 
+            </div> */}
+
+
+            <div className="flex gap-8 justify-between sm:flex-col md:flex-row">
+                {[1, 2, 3].map(i => <ArticleCard key={i} />)}
             </div>
+
+
+
             <div className='mt-12 mb-12 md:hidden'>
                 <div className='flex items-center justify-center gap-3 md:hidden'>
                     <p >Explore More</p>
