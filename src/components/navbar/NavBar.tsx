@@ -5,8 +5,10 @@ import RoundIcon from '../../assets/icons/circle.png'
 import { routes } from './routes'
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
+import { IoMenu } from "react-icons/io5";
 export const NavBar = () => {
     const pathname = usePathname()
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -30,14 +32,21 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [lastScrollY]);
 
+    const handleMenu = () => {
+
+        setMenuOpen(!menuOpen)
+    }
     return (
         <div
             className={clsx(
-                "bg-white h-[72px] fixed top-0 left-0 w-full transition-transform duration-300 z-50",
+                "bg-white  fixed top-0 left-0 w-full transition-transform duration-300 z-50",
                 {
                     "translate-y-0": isVisible,
                     "-translate-y-full": !isVisible,
-                }
+                }, {
+                'h-screen': menuOpen,
+                'h-[72px]': !menuOpen
+            }
             )}
         >
             <div className="max-w-[1440px] mx-auto px-8">
@@ -63,13 +72,42 @@ export const NavBar = () => {
                         ))}
                     </nav>
                     <div>
-                        <button className="bg-primary-grey py-2 px-4 font-semibold flex items-center gap-3">
+                        <button className="bg-primary-grey py-2 px-4 font-semibold flex items-center gap-3 md:inline sm:hidden ">
                             <Image src={RoundIcon} alt="circle image" />
                             Contact us
                         </button>
+
+                        <IoMenu className={clsx('w-6 h-6 md:hidden sm:inline', {
+                            'rotate-90': menuOpen
+                        })} onClick={handleMenu} />
                     </div>
                 </div>
             </div>
+            {
+                menuOpen && <div className="bg-white">
+                    <nav className="gap-6 items-center flex flex-col">
+                        {routes?.map((route: Route, index: number) => (
+                            <a
+                                href={route.path}
+                                className={clsx(
+                                    "text-opacity-60 text-black hover:text-opacity-100 transition",
+                                    {
+                                        "font-bold underline underline-offset-4 decoration-[#6390db] decoration-2":
+                                            pathname === route.path,
+                                    }
+                                )}
+                                key={index}
+                            >
+                                {route.name}
+                            </a>
+                        ))}
+                        <button className="bg-primary-grey py-2 px-4 font-semibold flex items-center gap-3 ">
+                            <Image src={RoundIcon} alt="circle image" />
+                            Contact us
+                        </button>
+                    </nav>
+                </div>
+            }
         </div>
     )
 }
