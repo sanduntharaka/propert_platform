@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export const MainButtonDiv = ({ ButtonText, ButtonImage }: MainButton) => {
     return (
         <motion.button
-            className="relative lg:w-32 lg:h-12 md:w-20 md:h-7 sm:w-32 sm:h-12 flex items-center justify-center gap-4 overflow-hidden border-b-2 border-blue-500 "
+            className="relative lg:w-32 lg:h-12 md:w-20 md:h-7 sm:w-32 sm:h-12 flex items-center justify-center gap-4 overflow-hidden border-b-2 border-blue-500 bg-red-400 pl-3 pr-3 box-content"
             initial="rest"
             whileHover="hover"
             whileTap="hover"
@@ -24,7 +24,7 @@ export const MainButtonDiv = ({ ButtonText, ButtonImage }: MainButton) => {
 
             {/* Original Background */}
             <motion.div
-                className="absolute inset-0 bg-primary-button"
+                className="absolute inset-0 bg-primary-button "
                 variants={{
                     rest: { y: "0%" },   // Original background visible
                     hover: { y: "-100%" }, // Original background slides up on hover

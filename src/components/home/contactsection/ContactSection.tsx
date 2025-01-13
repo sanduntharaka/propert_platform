@@ -54,7 +54,7 @@ export const ContactSection = () => {
                     </div>
                 </div>
 
-                <div className='pl-8 pr-8'>
+                <div className='pl-8 pr-8 mt-8'>
                     <Image src={AboutImage} alt="About" className="cover " />
 
                 </div>

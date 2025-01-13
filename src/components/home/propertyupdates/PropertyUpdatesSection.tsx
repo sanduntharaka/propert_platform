@@ -11,7 +11,7 @@ const ArticleCard = () => (
         <Image src={propimg1} alt="insight image" className="w-full h-72" />
         <div className="h-72 w-11/12 bg-primary-grey absolute top-28 p-8 flex flex-col justify-between">
             <div className="flex flex-col gap-4">
-                <p className="font-semibold text-sm flex gap-2">
+                <p className="font-semibold lg:text-sm md:text-[8px] sm:text-sm flex gap-2">
                     <span>Real Estate</span> <span>5 min read</span>
                 </p>
                 <div className="font-gellix font-bold md:prose sm:prose-sm">

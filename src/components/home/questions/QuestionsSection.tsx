@@ -9,7 +9,7 @@ export const QuestionsSection = () => {
                     <h2 className='font-gellix font-bold  text-primary-button'>
                         Have Questions?
                     </h2>
-                    <div className='flex justify-between lg:text-xl md:text-tiny sm:text-xl'>
+                    <div className='flex justify-between lg:text-xl md:text-tiny sm:text-xl mb-3'>
                         <p>Find answers to your most pressing questions about our platform and services.</p>
                     </div>
                 </div>
