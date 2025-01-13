@@ -72,7 +72,7 @@ export const NavBar = () => {
                         ))}
                     </nav>
                     <div>
-                        <button className="bg-primary-grey py-2 px-4 font-semibold flex items-center gap-3 md:inline sm:hidden ">
+                        <button className="bg-primary-grey py-2 px-4 font-semibold flex items-center gap-3 md:flex sm:hidden ">
                             <Image src={RoundIcon} alt="circle image" />
                             Contact us
                         </button>
