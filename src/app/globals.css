@@ -9,13 +9,13 @@
     --blue: #1e90ff;
     --red: red;
     --green: green;
-  }
+}
 
 .font-space-grotesk {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    
+
 }
 
 /* h1{
@@ -164,7 +164,7 @@ h6{
 
 
 
-.tagline{
+.tagline {
     background-color: red;
     font-size: 1rem;
     line-height: 150%;
@@ -173,46 +173,46 @@ h6{
 
 @media (min-width: 375px) {
 
-    h1{
-        background-color: var(--red);
+    h1 {
+        /* background-color: var(--red); */
         font-size: 32px;
         line-height: 40px;
-    
+
     }
-    
-    h2{
-        background-color: var(--red);
+
+    h2 {
+        /* background-color: var(--red); */
         font-size: 28px;
         line-height: 36px;
-    
+
     }
-    
-    h3{
-        background-color: var(--red);
+
+    h3 {
+        /* background-color: var(--red); */
         font-size: 24px;
         line-height: 30px;
-    
+
     }
-    
-    h4{
-        background-color: var(--red);
+
+    h4 {
+        /* background-color: var(--red); */
         font-size: 20px;
         line-height: 28px;
-    
+
     }
-    
-    h5{
-        background-color: var(--red);
+
+    h5 {
+        /* background-color: var(--red); */
         font-size: 18px;
         line-height: 24px;
-    
+
     }
-    
-    h6{
-        background-color: var(--red);
+
+    h6 {
+        /* background-color: var(--red); */
         font-size: 16px;
         line-height: 22px;
-    
+
     }
 
 
@@ -224,88 +224,88 @@ h6{
 /* tablet */
 @media (min-width: 768px) {
     h1 {
-        background-color: var(--blue);
+        /* background-color: var(--blue); */
         font-size: 36px;
         line-height: 43px;
     }
 
-    h2{
-        background-color: var(--blue);
+    h2 {
+        /* background-color: var(--blue); */
         font-size: 28px;
         line-height: 36px;
-    
+
     }
 
-    h3{
-        background-color: var(--blue);
+    h3 {
+        /* background-color: var(--blue); */
         font-size: 24px;
         line-height: 32px;
-    
+
     }
-    
-    h4{
-        background-color: var(--blue);
+
+    h4 {
+        /* background-color: var(--blue); */
         font-size: 20px;
         line-height: 28px;
-    
+
     }
-    
-    h5{
-        background-color: var(--blue);
+
+    h5 {
+        /* background-color: var(--blue); */
         font-size: 18px;
         line-height: 24px;
-    
+
     }
-    
-    h6{
-        background-color: var(--blue);
+
+    h6 {
+        /* background-color: var(--blue); */
         font-size: 16px;
         line-height: 22px;
-    
+
     }
 }
 
 /* web */
 @media (min-width: 1440px) {
     h1 {
-        background-color: var(--green);
+        /* background-color: var(--green); */
         font-size: 67.2px;
         line-height: 80px;
     }
 
-    h2{
-        background-color: var(--green);
+    h2 {
+        /* background-color: var(--green); */
         font-size: 57.6px;
         line-height: 70px;
-    
+
     }
 
-    h3{
-        background-color: var(--green);
+    h3 {
+        /* background-color: var(--green); */
         font-size: 48px;
         line-height: 60px;
-    
+
     }
-    
-    h4{
-        background-color: var(--green);
+
+    h4 {
+        /* background-color: var(--green); */
         font-size: 41.6px;
         line-height: 50px;
-    
+
     }
-    
-    h5{
-        background-color: var(--green);
+
+    h5 {
+        /* background-color: var(--green); */
         font-size: 33px;
         line-height: 40px;
-    
+
     }
-    
-    h6{
-        background-color: var(--green);
+
+    h6 {
+        /* background-color: var(--green); */
         font-size: 28px;
         line-height: 35px;
-    
+
     }
-    
+
 }

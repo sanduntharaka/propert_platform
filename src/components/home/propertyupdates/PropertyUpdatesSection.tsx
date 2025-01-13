@@ -7,23 +7,24 @@ import { MdArrowOutward } from "react-icons/md";
 
 
 const ArticleCard = () => (
-    <div className="h-[36rem] w-full max-w-lg bg-white relative mx-auto md:mx-0">
+    <div className="h-[26rem] w-full max-w-lg relative mx-auto md:mx-0 ">
         <Image src={propimg1} alt="insight image" className="w-full h-72" />
-        <div className="h-96 w-11/12 bg-primary-grey absolute bottom-0 p-8 flex flex-col justify-between">
+        <div className="h-72 w-11/12 bg-primary-grey absolute top-28 p-8 flex flex-col justify-between">
             <div className="flex flex-col gap-4">
                 <p className="font-semibold text-sm flex gap-2">
                     <span>Real Estate</span> <span>5 min read</span>
                 </p>
-                <div className="md:prose sm:prose-sm">
-                    <h5>Understanding Current Market Trends</h5>
+                <div className="font-gellix font-bold md:prose sm:prose-sm">
+                    <h6>Understanding Current Market Trends</h6>
                 </div>
-                <p className="text-base">
+                <p className="lg:text-base md:text-[8px] sm:text-base">
                     Explore the factors influencing today's real estate market.
                 </p>
             </div>
-            <button className="flex items-center gap-2">
-                Learn More <MdArrowOutward />
-            </button>
+            <div className="flex items-center gap-2">
+                <MainButtonDiv ButtonText="Learn More" ButtonImage={<MdArrowOutward />} />
+
+            </div>
         </div>
     </div>
 );
@@ -32,12 +33,12 @@ const ArticleCard = () => (
 
 export const PropertyUpdatesSection = () => {
     return (
-        <div className='max-w-[1440px] ml-auto mr-auto  lg:mb-28 md:mb-28 sm:mb-14  flex flex-col gap-4 '>
+        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-16  sm:mb-14  flex flex-col gap-4 '>
 
             <div className='flex flex-col gap-4 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8 '>
                 <div className='flex items-center gap-3'>
-                    <Image src={Rectangle} alt="Rectangle" className='w-[10px] h-[10px]' />
-                    <p >News</p>
+                    <Image src={Rectangle} alt="Rectangle" className='lg:w-[10px] lg:h-[10px] sm:w-[10px] sm:h-[10px] md:w-[5.79px] md:h-[5.79px]' />
+                    <p className='lg:text-base sm:text-base md:text-tiny_2 '>News</p>
                 </div>
 
                 {/* <div className='md:prose sm:prose-sm bg-red-400 w-full'>
@@ -45,17 +46,18 @@ export const PropertyUpdatesSection = () => {
                         Latest Property Market Updates
                     </h2>
                 </div> */}
-                <h1 className='font-space-grotesk font-bold lg:text-5xl md:text-4xl text-primary-button sm:text-4xl'>
+                <h2 className='font-gellix font-bold  text-primary-button'>
                     Latest Property Market Updates
-                </h1>
+                </h2>
 
-                <div className='flex justify-between text-xl'>
-                    <p className=''>
+                <div className='flex justify-between lg:text-xl md:text-tiny sm:text-xl'>
+                    <p>
                         Stay informed with latest property news.
                     </p>
                     <div className='md:flex items-center gap-3 sm:hidden'>
-                        <p >View all</p>
-                        <MdArrowOutward className='bg-primary-blue text-white' />
+
+                        <p className='lg:text-base md:text-tiny_2 sm:text-base'>View all</p>
+                        <MdArrowOutward className='bg-primary-blue text-white lg:w-[24px] lg:h-[24px] md:w-[13px] md:h-[13px]' />
                     </div>
                 </div>
             </div>
