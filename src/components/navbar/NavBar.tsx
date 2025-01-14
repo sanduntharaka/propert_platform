@@ -36,6 +36,10 @@ export const NavBar = () => {
 
         setMenuOpen(!menuOpen)
     }
+
+    const handleMenuItemClick = () => {
+        setMenuOpen(false)
+    }
     return (
         <div
             className={clsx(
@@ -84,7 +88,7 @@ export const NavBar = () => {
                 </div>
             </div>
             {
-                menuOpen && <div className="bg-white">
+                menuOpen && <div className="bg-white" onClick={handleMenuItemClick}>
                     <nav className="gap-6 items-center flex flex-col">
                         {routes?.map((route: Route, index: number) => (
                             <a
