@@ -14,7 +14,7 @@ export const ContactSection = () => {
                     <div className='md:w-2/3 flex flex-col gap-4 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8 '>
                         <div className='flex items-center gap-3'>
                             <Image src={Rectangle} alt="Rectangle" className='lg:w-[10px] lg:h-[10px] sm:w-[10px] sm:h-[10px] md:w-[5.79px] md:h-[5.79px]' />
-                            <p className='lg:text-base sm:text-base md:text-tiny_2 '>Comment</p>
+                            <p className='lg:text-base sm:text-base md:text-tiny_2 '>Connect</p>
                         </div>
 
                         <h2 className='font-gellix font-bold  text-primary-button'>
