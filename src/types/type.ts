@@ -6,6 +6,7 @@ interface Route {
 interface MainButton {
     ButtonText: string;
     ButtonImage: any;
+    line: boolean
 }
 
 

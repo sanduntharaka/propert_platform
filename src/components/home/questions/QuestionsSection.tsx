@@ -4,7 +4,7 @@ export const QuestionsSection = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto '>
             <div className='bg-primary-grey lg:pt-28 lg:pb-0 lg:pr-8 lg:pl-8  sm:pt-16 sm:pb-16  md:pt-16 md:pb-0  md:-mr-8 md:-ml-8'>
-                <div className='flex flex-col gap-4 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8 pl-8 pr-8'>
+                <div className='flex flex-col gap-4 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8 md:pl-8 md:pr-8'>
 
                     <h2 className='font-gellix font-bold  text-primary-button'>
                         Have Questions?

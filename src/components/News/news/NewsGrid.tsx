@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 
 const ArticleCard = () => (
-    <div className="h-[26rem] w-full max-w-lg relative mx-auto md:mx-0 ">
+    <div className="h-[26rem] w-full max-w-lg relative mx-auto md:mx-0 md:pl-0 md:pr-0 sm:pl-8 sm:pr-8">
         <Image src={propimg1} alt="insight image" className="w-full h-72" />
         <div className="h-72 w-11/12 bg-primary-grey absolute top-28 p-8 flex flex-col justify-between">
             <div className="flex flex-col gap-4">
@@ -31,7 +31,7 @@ const ArticleCard = () => (
 
 
 
-export const PropertyUpdatesSection = () => {
+export const NewsGrid = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-16  sm:mb-14  flex flex-col gap-4 '>
 
@@ -54,11 +54,7 @@ export const PropertyUpdatesSection = () => {
                     <p>
                         Stay informed with latest property news.
                     </p>
-                    <div className='md:flex items-center gap-3 sm:hidden'>
 
-                        <p className='lg:text-base md:text-tiny_2 sm:text-base'>View all</p>
-                        <MdArrowOutward className='bg-primary-blue text-white lg:w-[24px] lg:h-[24px] md:w-[13px] md:h-[13px]' />
-                    </div>
                 </div>
             </div>
 
@@ -140,15 +136,21 @@ export const PropertyUpdatesSection = () => {
             </div> */}
 
 
-            <div className="flex gap-8 justify-between sm:flex-col md:flex-row">
-                {[1, 2, 3].map(i => <ArticleCard key={i} />)}
+            <div className="md:grid md:grid-cols-3 sm:grid-cols-1 gap-8">
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => <ArticleCard key={i} />)}
             </div>
 
+            {/* flex gap-8 justify-between sm:flex-col md:flex-row */}
 
+            <div className='md:flex justify-end items-center gap-3 sm:hidden'>
+
+                <p className='lg:text-base md:text-tiny_2 sm:text-base'>View all</p>
+                <MdArrowOutward className='bg-primary-blue text-white lg:w-[24px] lg:h-[24px] md:w-[13px] md:h-[13px]' />
+            </div>
 
             <div className='mt-12 mb-12 md:hidden'>
                 <div className='flex items-center justify-center gap-3 md:hidden'>
-                    <p >Explore More</p>
+                    <p className='lg:text-base md:text-tiny_2 sm:text-base'>View all</p>
                     <MdArrowOutward className='bg-primary-blue text-white' />
                 </div>
             </div>

@@ -1,12 +1,15 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion';
+import clsx from 'clsx';
 
 
-export const MainButtonDiv = ({ ButtonText, ButtonImage }: MainButton) => {
+export const MainButtonDiv = ({ ButtonText, ButtonImage, line }: MainButton) => {
     return (
         <motion.button
-            className="relative lg:w-32 lg:h-12 md:w-20 md:h-7 sm:w-32 sm:h-12 flex items-center justify-center gap-4 overflow-hidden border-b-2 border-blue-500 bg-red-400 pl-3 pr-3 box-content"
+            className={clsx("relative lg:w-32 lg:h-12 md:w-20 md:h-7 sm:w-32 sm:h-12 flex items-center justify-center gap-4 overflow-hidden bg-red-400 pl-3 pr-3 box-content", {
+                "border-blue-500  border-b-2": line
+            })}
             initial="rest"
             whileHover="hover"
             whileTap="hover"

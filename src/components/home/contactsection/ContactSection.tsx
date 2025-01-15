@@ -10,7 +10,7 @@ export const ContactSection = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto'>
             <div className='bg-primary-grey lg:pt-28 lg:pb-28 lg:pr-8 lg:pl-8  sm:pt-16 sm:pb-16  md:pt-16 md:pb-16  md:-mr-8 md:-ml-8'>
-                <div className='flex gap-20 md:flex-row sm:flex-col pl-8 pr-8'>
+                <div className='flex gap-20 md:flex-row sm:flex-col md:pl-8 md:pr-8'>
                     <div className='md:w-2/3 flex flex-col gap-4 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8 '>
                         <div className='flex items-center gap-3'>
                             <Image src={Rectangle} alt="Rectangle" className='lg:w-[10px] lg:h-[10px] sm:w-[10px] sm:h-[10px] md:w-[5.79px] md:h-[5.79px]' />

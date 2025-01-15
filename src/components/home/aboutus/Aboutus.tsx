@@ -43,7 +43,7 @@ export const Aboutus = () => {
                                 Join our community and unlock exclusive access to the best properties available.
                             </p>
 
-                            <MainButtonDiv ButtonText="About Us" ButtonImage={<MdArrowOutward />} />
+                            <MainButtonDiv ButtonText="About Us" ButtonImage={<MdArrowOutward />} line={true} />
 
                         </div>
 
