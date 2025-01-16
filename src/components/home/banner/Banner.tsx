@@ -19,7 +19,7 @@ export const Banner = () => {
                     <p className="font-normal lg:text-md md:text-sm sm:text-base ">
                         Explore a wide range of properties tailored to your needs. Our platform connects you with the perfect home in just a few clicks.
                     </p>
-                    <MainButton ButtonText="Explore" ButtonImage={<MdArrowOutward />} />
+                    <MainButton ButtonText="Explore" ButtonImage={<MdArrowOutward />} line={true} />
                 </div>
             </div>
         </div >
