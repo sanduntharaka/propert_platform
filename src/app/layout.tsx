@@ -26,7 +26,10 @@ export default function RootLayout({
 
       <body className={clsx(roboto.className, "antialiased bg-white md:ml-8 md:mr-8 scroll-smooth")}>
         <NavBar />
-        {children}
+        <div className="mt-20">
+          {children}
+
+        </div>
         <Footer />
       </body>
     </html>

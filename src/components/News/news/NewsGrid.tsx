@@ -1,39 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import Rectangle from '../../../assets/icons/rectangle.png'
-import propimg1 from '../../../assets/images/Placeholder Image1.webp'
-import { MainButtonDiv } from '@/components/animated/MainButtonDiv'
 import { MdArrowOutward } from "react-icons/md";
-
-
-const ArticleCard = () => (
-    <div className="h-[26rem] w-full max-w-lg relative mx-auto md:mx-0 md:pl-0 md:pr-0 sm:pl-8 sm:pr-8">
-        <Image src={propimg1} alt="insight image" className="w-full h-72" />
-        <div className="h-72 w-11/12 bg-primary-grey absolute top-28 p-8 flex flex-col justify-between">
-            <div className="flex flex-col gap-4">
-                <p className="font-semibold lg:text-sm md:text-[8px] sm:text-sm flex gap-2">
-                    <span>Real Estate</span> <span>5 min read</span>
-                </p>
-                <div className="font-gellix font-bold md:prose sm:prose-sm">
-                    <h6>Understanding Current Market Trends</h6>
-                </div>
-                <p className="lg:text-base md:text-[8px] sm:text-base">
-                    Explore the factors influencing today's real estate market.
-                </p>
-            </div>
-            <div className="flex items-center gap-2">
-                <MainButtonDiv ButtonText="Learn More" ButtonImage={<MdArrowOutward />} line={true} />
-
-            </div>
-        </div>
-    </div>
-);
+import ArticleCard from './article/ArticleCard'
 
 
 
 export const NewsGrid = () => {
     return (
-        <div className='max-w-[1440px] ml-auto mr-auto lg:mb-28 md:mb-16  sm:mb-14  flex flex-col gap-4 '>
+        <div className='max-w-[1440px]  ml-auto mr-auto lg:mb-28 md:mb-16  sm:mb-14  flex flex-col gap-4'>
 
             <div className='flex flex-col gap-4 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8 '>
                 <div className='flex items-center gap-3'>

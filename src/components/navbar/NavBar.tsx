@@ -66,7 +66,8 @@ export const NavBar = () => {
                                     "text-opacity-60 text-black hover:text-opacity-100 transition",
                                     {
                                         "font-bold underline underline-offset-4 decoration-[#6390db] decoration-2":
-                                            pathname === route.path,
+                                            (route.path === '/' && pathname === route.path) ||
+                                            (route.path !== '/' && pathname.startsWith(route.path)),
                                     }
                                 )}
                                 key={index}
