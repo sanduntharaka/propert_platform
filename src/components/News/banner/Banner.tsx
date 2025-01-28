@@ -6,7 +6,7 @@ export const Banner = () => {
         <div className='max-w-[1440px] ml-auto mr-auto'>
             <div className="w-full flex justify-center items-center">
                 <div className="w-full h-[666px] sm:h-[408px] md:h-[500px] lg:h-[666px]">
-                    <Image src={NewsBanner} alt="Banner" className="object-fill w-full h-full" />
+                    <Image src={NewsBanner} alt="Banner" className="object-cover w-full h-full" />
                 </div>
             </div>
             <div className="md:w-1/2 flex flex-col lg:mt-14 lg:mb-14 md:mt-8 md:mb-8 sm:mt-12 sm:mb-12 lg:gap-8 md:gap-4 sm:gap-5 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8">

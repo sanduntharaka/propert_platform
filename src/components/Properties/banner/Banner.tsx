@@ -1,23 +1,21 @@
 import React from 'react'
-import AboutBanner from '../../../assets/images/aboutPageBanner.webp'
-import { MdArrowOutward } from "react-icons/md";
+import PropertiesBanner from '../../../assets/images/properties-banner.webp'
 import Image from 'next/image'
-import { MainButton } from '../../animated/MainButton';
 export const Banner = () => {
     return (
         <div className='max-w-[1440px] ml-auto mr-auto'>
             <div className="w-full flex justify-center items-center">
                 <div className="w-full h-[666px] sm:h-[408px] md:h-[500px] lg:h-[666px]">
-                    <Image src={AboutBanner} alt="Banner" className="object-cover w-full h-full" />
+                    <Image src={PropertiesBanner} alt="Banner" className="object-cover w-full h-full" />
                 </div>
             </div>
             <div className="md:w-1/2 flex flex-col lg:mt-14 lg:mb-14 md:mt-8 md:mb-8 sm:mt-12 sm:mb-12 lg:gap-8 md:gap-4 sm:gap-5 md:ml-0 md:mr-0 sm:ml-8 sm:mr-8">
                 <h1 className="font-gellix font-bold text-primary-button">
-                    Learn More About Our Mission and Vision
+                    Explore a World of Exclusive Properties Tailored to Your Needs
                 </h1>
                 <div className="flex flex-col justify-start">
                     <p className="font-normal lg:text-md md:text-sm sm:text-base ">
-                        Connecting you to exclusive property investments with transparency and trust, making real estate exploration simple and seamless.
+                        Discover a curated selection of properties designed to suit every lifestyle. From modern apartments to luxurious retreats, explore detailed listings and stunning visuals to find your perfect match.
                     </p>
                 </div>
             </div>
