@@ -6,17 +6,18 @@ import facebook from "../../../assets/icons/facebook.png";
 import { FaFacebook, FaXTwitter, FaLinkedin, FaLink } from "react-icons/fa6";
 import Image from "next/image";
 import { NewsGrid } from "@/components/News/news/NewsGrid";
+import { InsightsGrid } from "@/components/insight/insights/InsightsGrid";
+import { InsightSection } from "@/components/home/insights/InsightSection";
 
 const page = () => {
   return (
     <div className="max-w-[1440px] md:ml-auto md:mr-auto sm:mr-8 sm:ml-8">
       <div className="grid lg:gap-10 md:gap-7 sm:gap-10 lg:pt-32 md:pt-16 sm:pt-32  lg:pb-32 md:pb-16 sm:pb-32    ">
         <p className="lg:text-base md:text-[8px] sm:text-base">
-          News &gt; Categories
+          Insight &gt; Category
         </p>
         <h2 className="font-gellix font-bold ">
-          Understanding Current Market <br />
-          Trends
+          Maximize Your Property Investment Returns
         </h2>
         <div className="flex lg:gap-4  md:gap-3  sm:gap-4 items-center">
           <Image
@@ -180,8 +181,7 @@ const page = () => {
           </div>
         </div>
       </div>
-
-      <NewsGrid />
+      <InsightSection />
     </div>
   );
 };
