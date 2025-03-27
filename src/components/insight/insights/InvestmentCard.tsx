@@ -3,8 +3,10 @@ import Image from "next/image";
 import Rectangle from "../../../assets/icons/rectangle.png";
 import AboutBanner from "../../../assets/images/aboutPageBanner.webp";
 import { FiArrowUpRight } from "react-icons/fi";
+import { useRouter } from "next/navigation";
 
 export const InvestmentCard = () => {
+  const router = useRouter();
   return (
     <div className="text-primary-button flex flex-col sm:gap-40 md:gap-6 md:px-0 sm:px-5 md:mb-0 sm:mb-10">
       <div className="flex justify-between sm:gap-40 md:gap-6 md:flex-row sm:flex-col">
@@ -12,6 +14,7 @@ export const InvestmentCard = () => {
         <div
           className="relative flex-1 bg-primary-grey lg:w-80 md:w-52 lg:h-[400px] md:h-56 sm:w-full sm:h-[400px]
             transition-all duration-300 ease-in-out group md:hover:bg-primary-button md:hover:lg:h-[450px] md:hover:md:h-[300px] overflow-hidden"
+          onClick={() => router.push("/insights/1")}
         >
           {/* Inner Content */}
           <div className="flex flex-col justify-between md:h-full sm:h-[400px] p-6 transition-all duration-300 md:group-hover:text-white relative z-10">
@@ -37,7 +40,7 @@ export const InvestmentCard = () => {
               <p className="lg:text-sm sm:text-sm md:text-xs">
                 28 November 2024
               </p>
-              <FiArrowUpRight className="text-primary-button text-xl md:hidden sm:inline " />
+              <FiArrowUpRight className="text-primary-button text-xl md:hidden sm:inline" />
             </div>
           </div>
 
