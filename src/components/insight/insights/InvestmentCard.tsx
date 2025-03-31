@@ -12,8 +12,12 @@ export const InvestmentCard = () => {
       <div className="flex justify-between sm:gap-40 md:gap-6 md:flex-row sm:flex-col">
         {/* Card Container */}
         <div
-          className="relative flex-1 bg-primary-grey lg:w-80 md:w-52 lg:h-[400px] md:h-56 sm:w-full sm:h-[400px]
-            transition-all duration-300 ease-in-out group md:hover:bg-primary-button md:hover:lg:h-[450px] md:hover:md:h-[300px] overflow-hidden"
+          className="
+    relative flex-1 bg-primary-grey overflow-hidden cursor-pointer
+    sm:h-[400px] md:h-[300px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px]
+    sm:hover:h-[420px] md:hover:h-[320px] lg:hover:h-[450px] xl:hover:h-[550px] 2xl:hover:h-[650px]
+    transition-all duration-300 ease-in-out group
+  "
           onClick={() => router.push("/insights/1")}
         >
           {/* Inner Content */}
