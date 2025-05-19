@@ -6,6 +6,7 @@ import "./globals.css";
 import { NavBar } from "@/components/navbar/NavBar";
 import clsx from "clsx";
 import { Footer } from "@/components/footer/Footer";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -44,6 +45,8 @@ export default function RootLayout({
             });
           `}
         </Script>
+
+        <AnalyticsTracker />
 
         <NavBar />
         <div className="mt-20">{children}</div>
