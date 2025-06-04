@@ -6,10 +6,10 @@ import { WeekTrends } from "@/components/News/trends/WeekTrends";
 import NewsBanner from "../../assets/images/news-banner.webp";
 
 export const metadata: Metadata = {
-  title: "Investment Platforms UK | Purchasing Investment Property",
+  title: "Latest News on Investment Platforms UK | Leighbrook",
   description:
-    "Get expert insights for property investors in the UK. Discover market trends, investment strategies, and real estate opportunities.",
-  keywords: ["investment platforms uk", "investment properties for sale uk"],
+    "Stay ahead in the world of investment platforms UK. Read Leighbrook’s latest news, expert takes, and financial updates.",
+  keywords: ["investment platforms uk"],
 };
 
 const page = () => {

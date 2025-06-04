@@ -8,14 +8,10 @@ import { PropertyUpdatesSection } from "@/components/home/propertyupdates/Proper
 import { QuestionsSection } from "@/components/home/questions/QuestionsSection";
 
 export const metadata: Metadata = {
-  title: "Property Investment in UK | Best UK Property Investments",
+  title: "Trusted Platform for Property Investment in UK | Leighbrook",
   description:
-    "Discover the best property investment opportunities in the UK with our expert guidance and exclusive listings.",
-  keywords: [
-    "property investment in uk",
-    "best places in uk for property investment",
-    "best uk property investments",
-  ],
+    "Looking to start property investment in UK? Leighbrook makes it easy with expert insights, low entry points, and strong returns. Start investing today! ",
+  keywords: ["property investment in uk"],
 };
 
 export default function Home() {
