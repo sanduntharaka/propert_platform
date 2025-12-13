@@ -14,8 +14,10 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Property platform l8d",
-  description: "Website for property platform l8d",
+  title:
+    "Best Property Investments Platform in the UK | Modern Apartments & Luxury Real Estate | Leighbrook",
+  description:
+    "Discover UK property investments, modern apartments, and luxury real estate across top cities. Browse listings, explore investment opportunities, and buy or sell property with ease.",
 };
 
 export default function RootLayout({
