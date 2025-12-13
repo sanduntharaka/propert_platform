@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  name         String?
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  news         News[]
+}
+
+model Category {
+  id          Int        @id @default(autoincrement())
+  name        String
+  description String?
+  parentId    Int?
+  parent      Category?  @relation("CategoryChildren", fields: [parentId], references: [id])
+  children    Category[] @relation("CategoryChildren")
+
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@index([parentId])
+  
+  newsAsCategory     News[] @relation("NewsCategory") 
+  newsAsSubcategory  News[] @relation("NewsSubcategory")
+}
+
+
+model News {
+  id            Int        @id @default(autoincrement())
+  title         String
+  slug          String     @unique
+  contentHtml   String     @db.Text   // store raw HTML
+  excerpt       String?    @db.Text
+  imageUrl      String?    @db.Text   // store URL/path to the uploaded image
+  published     Boolean    @default(false)
+  publishedAt   DateTime?
+  tags          String[]               // Postgres text[]
+  authorId      Int
+  author        User       @relation(fields: [authorId], references: [id])
+
+  // Optional relations to your existing Category model
+  categoryId    Int?
+  category      Category?  @relation("NewsCategory", fields: [categoryId], references: [id])
+  subcategoryId Int?
+  subcategory   Category?  @relation("NewsSubcategory", fields: [subcategoryId], references: [id])
+
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@index([authorId])
+  @@index([categoryId])
+  @@index([subcategoryId])
+  @@index([published, publishedAt])
+}
