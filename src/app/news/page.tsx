@@ -6,9 +6,9 @@ import { WeekTrends } from "@/components/News/trends/WeekTrends";
 import NewsBanner from "../../assets/images/news-banner.webp";
 
 export const metadata: Metadata = {
-  title: "Latest News on Investment Platforms UK | Leighbrook",
+  title: "Leighbrook Company News & UK Property Market Updates",
   description:
-    "Stay ahead in the world of investment platforms UK. Read Leighbrook’s latest news, expert takes, and financial updates.",
+    "Read the latest company news from Leighbrook and stay updated on fast-moving UK property market changes, interest rates, and investment platform updates.",
   keywords: ["investment platforms uk"],
 };
 

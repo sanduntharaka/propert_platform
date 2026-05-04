@@ -52,13 +52,13 @@ export const NavBar = () => {
         {
           "h-screen": menuOpen,
           "h-[72px]": !menuOpen,
-        }
+        },
       )}
     >
       <div className="max-w-[1440px] mx-auto px-8">
         <div className="py-4 flex items-center justify-between">
           <div>
-            <p className="font-bold text-2xl">LEIGBROOK</p>
+            <p className="font-bold text-2xl">LEIGHBROOK</p>
           </div>
           <nav className="gap-6 items-center hidden md:flex">
             {routes?.map((route: Route, index: number) => (
@@ -70,7 +70,7 @@ export const NavBar = () => {
                     "font-bold underline underline-offset-4 decoration-[#6390db] decoration-2":
                       (route.path === "/" && pathname === route.path) ||
                       (route.path !== "/" && pathname.startsWith(route.path)),
-                  }
+                  },
                 )}
                 key={index}
               >
@@ -107,7 +107,7 @@ export const NavBar = () => {
                   {
                     "font-bold underline underline-offset-4 decoration-[#6390db] decoration-2":
                       pathname === route.path,
-                  }
+                  },
                 )}
                 key={index}
               >

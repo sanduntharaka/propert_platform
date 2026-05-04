@@ -5,9 +5,9 @@ import PropertiesBanner from "../../assets/images/properties-banner.webp";
 import { PropertiesGrid } from "@/components/Properties/properties/PropertiesGrid";
 
 export const metadata: Metadata = {
-  title: "Top Properties for Investment in UK | Curated by Leighbrook",
+  title: "UK Investment Properties for Sale | Leighbrook Portfolio",
   description:
-    "Find high potential properties for investment in UK with Leighbrook. Start your investment journey with confidence and expert support.",
+    "Browse our curated portfolio of UK investment properties. From high-yield buy-to-lets to premium commercial real estate, find your next investment here.",
   keywords: ["properties for investment in uk"],
 };
 

@@ -7,9 +7,9 @@ import React from "react";
 import { InsightsGrid } from "@/components/insight/insights/InsightsGrid";
 
 export const metadata: Metadata = {
-  title: "Trends & Tips for Property Investors UK | Leighbrook",
+  title: "UK Property Investment Insights & Guides | Leighbrook",
   description:
-    "Leighbrook provides data-driven insights for property investors UK. Explore trends, forecasts, and expert advice for smarter investing.",
+    "Maximise your returns with our data-driven UK property investment insights. Read expert guides on rental yields, market trends, and buy-to-let strategies.",
   keywords: ["property investors uk"],
 };
 

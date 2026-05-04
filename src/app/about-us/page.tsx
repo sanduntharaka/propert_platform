@@ -6,9 +6,9 @@ import { ContactSection } from "@/components/home/contactsection/ContactSection"
 import AboutBanner from "../../assets/images/aboutPageBanner.webp";
 
 export const metadata: Metadata = {
-  title: "About Leighbrook | One of the Trusted Investment Companies UK",
+  title: "About Leighbrook | UK Property Investment Experts",
   description:
-    "Looking for reliable investment companies UK? Learn why Leighbrook’s team and values make us the right choice for modern investors.",
+    "Meet the Leighbrook team. We are trusted UK property investment specialists, helping clients secure high-yield residential and luxury real estate portfolios.",
   keywords: ["investment companies uk"],
 };
 

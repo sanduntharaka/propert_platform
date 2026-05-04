@@ -8,10 +8,9 @@ import { PropertyUpdatesSection } from "@/components/home/propertyupdates/Proper
 import { QuestionsSection } from "@/components/home/questions/QuestionsSection";
 
 export const metadata: Metadata = {
-  title:
-    "Best Property Investments Platform in the UK | Modern Apartments & Luxury Real Estate | Leighbrook",
+  title: "UK Property Investments & Luxury Real Estate | Leighbrook",
   description:
-    "Discover UK property investments, modern apartments, and luxury real estate across top cities. Browse listings, explore investment opportunities, and buy or sell property with ease.",
+    "Discover high-yield UK property investments and luxury real estate. Leighbrook offers data-driven buy-to-let and commercial opportunities. Enquire today.",
   keywords: [
     "uk property investments",
     "property investment uk",
